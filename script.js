@@ -111,7 +111,12 @@ for(var j=0;j<article.articles.length;j++){
               <select class="form-control ">
                 <option>
                 1             
+                </option><option>
+                2             
+                </option><option>
+                3             
                 </option>
+
                 
               </select>
               <p class="mt-n6 mr-4 float-right">&times;</p>
