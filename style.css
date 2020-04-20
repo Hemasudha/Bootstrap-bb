@@ -1,0 +1,24 @@
+html,body{height:100%;}
+.container-fluid {
+    height:100%;
+}
+.navbar-brand img{
+    width: 100px;
+    height: 30px;
+}
+.circle-icon {
+    padding:3px;
+    border-radius: 50%;
+    border: 1px solid #000
+}
+.badge {
+    position:relative;
+    left:-20px;
+    top:-16px;
+    }
+.active{
+    border-bottom: 2px solid blue;
+}
+.mt-n6{
+    margin-top: -1.9rem !important;
+}

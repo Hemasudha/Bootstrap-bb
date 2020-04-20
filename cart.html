@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body> 
+ 
+<div class="container-fluid p-0">
+  <nav class="navbar navbar-default bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="images/bb_logo.png" alt="Logo">
+    </a>
+    <p class="justify-content-center text-muted my-1">Welcome to user</p>
+    <a class="cart-image">
+      <i class="fa fa-shopping-cart circle-icon " style="font-size: 20px;"></i>
+      <span class="badge">0</span>
+    </a>
+  
+  </nav>
+    
+      <ul class="nav justify-content-center shadow-sm">
+        <li class="nav-item ">
+          <a class="nav-link active text-muted" data-toggle="tab" href="#section">vegetables</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-muted" data-toggle="tab" href="#">Rice</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-muted" data-toggle="tab" href="#">Millets</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-muted" data-toggle="tab" href="#">Pulses</a>
+        </li><li class="nav-item ">
+          <a class="nav-link text-muted" data-toggle="tab" href="#">cart</a>
+        </li>
+      </ul>
+      
+     
+      
+      <div class="tab-content mt-2 ">
+      
+        <div class="tab-pane container active" id="section" >
+          <div class="row"  id="veggies"></div>
+        </div>
+        
+      </div>
+      
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
