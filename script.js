@@ -73,11 +73,9 @@ var obj=user.users
 for(
     i=0;i<obj.length;i++){
  if(obj[i].email == email && obj[i].password == password){
-        alert(obj[i].email)
             checkval = true;          
             
             if(checkval == true){
-                alert("login correct");
                 setTimeout(function(){document.location.href = "cart.html"},500);
             }
             return false;
