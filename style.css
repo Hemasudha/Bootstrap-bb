@@ -2,6 +2,10 @@ html,body{height:100%;}
 .container-fluid {
     height:100%;
 }
+.bg-shapes{
+    background: url("images/background.jpg") no-repeat !important;
+    background-size: cover;
+}
 .navbar-brand img{
     width: 100px;
     height: 30px;
