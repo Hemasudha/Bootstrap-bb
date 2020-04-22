@@ -1,0 +1,140 @@
+{
+	"users": [{
+			"email": "user1@gmail.com",
+			"password": "user1"
+		},
+		{
+			"email": "user2@gmail.com",
+			"password": "user2"
+		}
+	],
+
+	"categories": [{
+		"vegetables": [{
+				"image": "images/fresho-potato.jpg",
+				"title": "potato",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+			},
+			{
+				"image": "images/fresho-carrot-local.jpg",
+				"title": "carrot",
+				"weight": "1/2kg",
+				"price": "Rs 200/-"
+			},
+			{
+				"image": "images/fresho-onion.jpg",
+				"title": "onion",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+            },
+            {
+				"image": "images/fresho-tomato-hybrid.jpg",
+				"title": "tomato",
+				"weight": "1/2kg",
+				"price": "Rs 200/-"
+			},
+			{
+				"image": "images/capsicum-green.jpg",
+				"title": "capsicum",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+			}
+		],
+		"rice": [{
+				"image": "images/popular-rice-raw-sona-masoori.jpg",
+				"title": "Masoori",
+				"weight": "1/2kg",
+				"price": "Rs 200/-"
+			},
+			{
+				"image": "images/royal-basmati-rice-everyday.jpg",
+				"title": "Basmati",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+            },
+            {
+				"image": "images/india-gate-basmati-rice-feast-rozzana.jpg",
+				"title": "Basmati rice",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+            },
+            {
+				"image": "images/kohinoor-charminar-brown-rice.jpg",
+				"title": "Brown rice",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+			},
+			{
+				"image": "images/india-gate-basmati-rice-feast-rozzana.jpg",
+				"title": "Basmati rice",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+            }
+        ],
+        "pulses":[{
+            
+				"image": "images/popular-masoor-dal.jpg",
+				"title": "Masoor dal",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+            },
+            {
+				"image": "images/tata-sampann-masoor-dal.jpg",
+				"title": "tata masoor",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+            },
+            {
+				"image": "images/royal-organic-urad-dal-black-split.jpg",
+				"title": "Urad dal",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+            },
+            {
+				"image": "images/royal-organic-green-moong-dal-split.jpg",
+				"title": "Green moong",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+            },
+            {
+				"image": "images/royal-fried-grambengal-gram.jpg",
+				"title": "Bengal gram",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+			}
+        ],
+        "millets":[
+            {
+				"image": "images/arya-organic-finger-milletragi-flour.jpg",
+				"title": "ragi",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+            },
+            {
+				"image": "images/gooddiet-multi-millet-flakes-plain.jpg",
+				"title": "multi millets",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+            },
+            {
+				"image": "images/health-sutra-flakes-bajra.jpg",
+				"title": "bajra",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+            },
+            {
+				"image": "images/royal-jowar.jpg",
+				"title": "jowar",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+			},
+			{
+				"image": "images/gooddiet-multi-millet-flakes-plain.jpg",
+				"title": "multi millets",
+				"weight": "1/2kg",
+				"price": "Rs 100/-"
+            }
+        ]
+	}]
+}

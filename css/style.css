@@ -3,9 +3,12 @@ html,body{height:100%;}
     height:100%;
 }
 .bg-shapes{
-    background: url("images/background.jpg") no-repeat !important;
+    background: url("../images/background.jpg") no-repeat !important;
     background-size: cover;
 }
+.invalid {
+    border: 5px solid #ffdddd;
+  }
 .navbar-brand img{
     width: 100px;
     height: 30px;
@@ -26,3 +29,5 @@ html,body{height:100%;}
 .mt-n6{
     margin-top: -1.9rem !important;
 }
+.tab-pane ul li{display: inline-block;}
+.tab-pane{border:none}
