@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+
+</head>
+<body> 
+ 
+<div class="container-fluid p-0">
+  <nav class="navbar navbar-default bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="images/bb_logo.png" alt="Logo">
+    </a>
+    <p class="justify-content-center text-muted my-1">Welcome to user</p>
+    <a class="cart-image">
+      <i class="fa fa-shopping-cart circle-icon " style="font-size: 20px;"></i>
+      <span class="badge">0</span>
+    </a>
+  
+  </nav>
+    
+      <ul class="nav justify-content-center shadow-sm">
+        <li class="nav-item ">
+          <a class="nav-link active text-muted" data-toggle="tab" href="#vegetables">vegetables</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-muted" data-toggle="tab" href="#rice">Rice</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-muted" data-toggle="tab" href="#millets">Millets</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-muted" data-toggle="tab" href="#pulses">Pulses</a>
+        </li>
+      </ul>  
+      <div class="tab-content mt-2 ">
+      
+        <div class="tab-pane container vegetables active" id="vegetables" >
+          <ul class="row" id="vegetableList"></ul>
+         </div>
+        <div class="tab-pane container rice" id="rice" >
+          <ul class="row" id="riceList"></ul>
+        </div>
+        <div class="tab-pane container millets" id="millets" >
+          <ul class="row" id="milletsList"></ul>
+
+        </div>
+        <div class="tab-pane container pulses" id="pulses" >
+          <ul class="row" id="pulsesList"></ul>
+
+        </div>
+        
+      </div>
+      
+  </div>
+  
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="js/underscore.js" type="text/javascript"></script>
+
+  <script src="js/cart.js" type="text/javascript"></script>
+
+
+  <script id="vegetable-template" type="text/template">
+    <%_.each(vegetables,function(vegetable){ %>
+      <li class="shadow col-xs-1 p-3 mb-5 mx-1 bg-white rounded "> 
+        <div><img src="<%= vegetable.image %>" /> </div>
+        <p class="text-muted"><%= vegetable.title %></p>
+        <p class="text-muted"><%= vegetable.weight %></p>
+        <p class="text-muted"><%= vegetable.price %></p>
+        <p class="blockquote-footer">standard delivery: Tomorrow evening</p>
+        <select class="form-control ">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <p class="mt-n6 mr-4 float-right">&times;</p>
+        <button class="btn btn-default my-3 text-primary float-right border-primary">
+          <i class="fa fa-shopping-cart"></i>Add to cart</button>    </li>
+   <% }); %>
+    
+  </script>
+
+  <script id="rice-template" type="text/template">
+    <%_.each(rice,function(rice){ %>
+      <li class="shadow col-xs-1 p-3 mb-5 mx-1 bg-white rounded "> 
+        <div><img src="<%= rice.image %>" /> </div>
+        <p class="text-muted"><%= rice.title %></p>
+        <p class="text-muted"><%= rice.weight %></p>
+        <p class="text-muted"><%= rice.price %></p>
+        <p class="blockquote-footer">standard delivery: Tomorrow evening</p>
+        <select class="form-control ">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <p class="mt-n6 mr-4 float-right">&times;</p>
+        <button class="btn btn-default my-3 text-primary float-right border-primary">
+          <i class="fa fa-shopping-cart"></i>Add to cart</button>    </li>
+   <% }); %>
+    
+  </script>
+
+  <script id="millets-template" type="text/template">
+    <%_.each(millets,function(millet){ %>
+      <li class="shadow col-xs-1 p-3 mb-5 mx-1 bg-white rounded "> 
+        <div><img src="<%= millet.image %>" /> </div>
+        <p class="text-muted"><%= millet.title %></p>
+        <p class="text-muted"><%= millet.weight %></p>
+        <p class="text-muted"><%= millet.price %></p>
+        <p class="blockquote-footer">standard delivery: Tomorrow evening</p>
+        <select class="form-control ">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <p class="mt-n6 mr-4 float-right">&times;</p>
+        <button class="btn btn-default my-3 text-primary float-right border-primary">
+          <i class="fa fa-shopping-cart"></i>Add to cart</button>    </li>
+   <% }); %>
+    
+  </script>
+  <script id="pulses-template" type="text/template">
+    <%_.each(pulses,function(pulse){ %>
+      <li class="shadow col-xs-1 p-3 mb-5 mx-1 bg-white rounded "> 
+        <div><img src="<%= pulse.image %>" /> </div>
+        <p class="text-muted"><%= pulse.title %></p>
+        <p class="text-muted"><%= pulse.weight %></p>
+        <p class="text-muted"><%= pulse.price %></p>
+        <p class="blockquote-footer">standard delivery: Tomorrow evening</p>
+        <select class="form-control ">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <p class="mt-n6 mr-4 float-right">&times;</p>
+        <button class="btn btn-default my-3 text-primary float-right border-primary">
+          <i class="fa fa-shopping-cart"></i>Add to cart</button>    </li>
+   <% }); %>
+    
+  </script>
+</body>
+
+</html>
